@@ -9,7 +9,7 @@
 build/
 DerivedData/
 bin/
-!bin/data/GUI
+!bin/data/GUI/*
 
 ## Various settings
 *.pbxuser
