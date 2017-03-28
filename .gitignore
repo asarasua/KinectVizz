@@ -8,6 +8,8 @@
 ## Build generated
 build/
 DerivedData/
+bin/
+!bin/data/GUI
 
 ## Various settings
 *.pbxuser
