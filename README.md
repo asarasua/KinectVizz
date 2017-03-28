@@ -1,21 +1,21 @@
-# repovizzKinectRec
+# KinectVizz
 
-repovizzKinectRec is an application for recording motion capture (mocap) data from a MS Kinect aligned with other streams and export a [repoVizz](http://repoVizz.upf.edu/) datapack. The current version allows to record:
+KinectVizz is an application for recording motion capture (MoCap) data from a MS Kinect aligned with other streams and export a [repoVizz](http://repoVizz.upf.edu/) datapack. The current version allows to record:
 
-* Mocap data.
+* MoCap data.
 * Audio
 * RGB video
 * RGBD video (depth image) 
 * OpenNI [ONI file](http://structure.io/openni) 
 
-repovizzKinectRec is developed in [openFrameworks](http://www.openframeworks.cc/) and uses:
-
-* [ofxOpenNI](https://github.com/gameoverhack/ofxOpenNI) for accessing Kinect data (video and skeleton tracking).
-* [ofxVideoRecorder](https://github.com/timscaffidi/ofxVideoRecorder) for video recording.
+Dependencies for building:
+* [openFrameworks](http://www.openframeworks.cc/)
+* [ofxOpenNI](https://github.com/gameoverhack/ofxOpenNI). ofxAddon for accessing Kinect data (video and skeleton tracking).
+* [ofxVideoRecorder](https://github.com/timscaffidi/ofxVideoRecorder). ofxAddon for video recording.
 * [libsndfile](http://www.mega-nerd.com/libsndfile/) for audio recording.
-* [ofxUI](https://github.com/rezaali/ofxUI) for the GUI.
+* [ofxUI](https://github.com/rezaali/ofxUI). ofxAddon for the GUI.
 
-Currently, it has only been tested on **Mac OSX**. The provided source code is ready to use with XCode, but should be cross-compatible as it has been developed in openFrameworks.
+An XCode project is provided to build on OSX.
 
 ## The Datapack
 RepoVizz is an integrated online system capable of structural formatting and remote storage, browsing, exchange, annotation, and visualization of synchronous multi-modal, time-aligned data.
@@ -23,7 +23,7 @@ From the [repoVizz tutorial](http://repoVizz.upf.edu/misc/repoVizzTutorial.pdf):
 
 >repoVizz data entities are constituted as collections of time-synchronous multi-modal data files (signals or annotations) organized in a tree structure that holds pointers to such files, associated metadata, text-based descriptions, and pointers to supplementary files. The tree structure is implemented by means of a customary XML file, the repoVizz Struct, which is hierarchically formed by different types of nodes with functions ranging from organizing data or holding text descriptions to holding pointers to data files of different types. The logical entity formed by a repoVizz Struct and all files pointed by its nodes is a repoVizz **Datapack**
 
-**repovizzKinectRec** allows to perform a multimodal recording using MS Kinect, generating a ready-to-upload aligned repovizz datapack.
+**KinectVizz** allows to perform a multimodal recording using MS Kinect, generating a ready-to-upload aligned repovizz datapack.
 
 ## Recording and uploading a datapack
 
